@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Task List</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card" id="main">
+                    <form id="task-form">
+                        <div class="input-field col s12">
+                            <input type="text" name="task" id="book">
+                            <label for="task">New Book</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="text" name="task" id="author">
+                            <label for="task">Book Author</label>
+                        </div>
+                        <input type="submit" value="Add Book" class="btn">
+                    </form>
+                </div>
+            </div>
+
+            <div class="card-action">
+                <h5 class="task-title">Books List</h5>
+            </div>
+            <ul class="collection">
+
+            </ul>
+
+            <a href="#" class="clear-tasks btn black">Clear Books List</a>
+
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
